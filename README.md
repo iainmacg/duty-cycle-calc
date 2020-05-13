@@ -1,18 +1,23 @@
 "# duty-cycle-calc"
 
 Duty Cycle Calculator
+
 User Guide
+
 Iain MacGilp - June 2019
+
 
 The Duty Cycle Calculator is a tool used to analyse batches of SEM (scanning electron microscopy) grating images. It works as a plugin within the Fiji (ImageJ) program by opening an image, plotting the intensity of a line scan, identifying the peaks, then calculating resultant duty cycle and recording the result.
 
 Setup Instructions
+
 1.	Download Fiji: https://imagej.net/Fiji/Downloads
 2.	Add BAR update site to Fiji: https://imagej.net/BAR
 3.	Install the plugin: Copy the .py file into the plugins folder within the Fiji installation directory
 4.	Run: In the Plugins tab of Fiji, navigate to the bottom of the list and click on the Duty Cycle Calculator
 
 User interface
+
 Input image directory: select a directory to analyse images from. Subdirectories will be included.
 Output results directory: select a directory to store the output files.
 Scans per image: number of line scans per image. Scans will be evenly distributed across images.
