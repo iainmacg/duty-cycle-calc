@@ -1,4 +1,5 @@
-"# duty-cycle-calc" 
+"# duty-cycle-calc"
+
 Duty Cycle Calculator
 User Guide
 Iain MacGilp - June 2019
