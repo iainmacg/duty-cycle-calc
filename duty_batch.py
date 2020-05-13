@@ -3,6 +3,7 @@
 #@ String(label='Scans per image', value='3') input_scans
 #@ String(label='File types', value='tif;jpeg') file_types
 #@ String(label='Filter', value='') filters
+#@ String(label='Exclusion Filter', value='') ex_filters
 #@ Boolean(label='Horizontal grating lines', value=True) do_horizontal
 
 '''Duty cycle calculator
@@ -262,6 +263,7 @@ def batch_open_images(path, file_type=None, name_filter=None, horizontal=False):
     for directory, dir_names, file_names in os.walk(path):
         # We are only interested in files.
         file_names = [f for f in file_names if not f[0] == '.']
+        file_names = [f for f in file_names if str(ex_filters) not in f]
         for file_name in file_names:
             # The list contains only the file names.
             # The full path needs to be reconstructed.
